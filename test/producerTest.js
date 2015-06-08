@@ -6,7 +6,7 @@ var assert = chai.assert;
 
 var validOperations = ['+', '-', '*', '/'];
 
-var  Producer = require('../lib/Producer.js');
+var  Producer = require('../lib/Producer');
 
 describe('Helper Functions', function() {
   describe('Random Number', function() {

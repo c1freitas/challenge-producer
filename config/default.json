@@ -1,5 +1,6 @@
 {
   "host": "localhost",
   "port": 3000,
+  "frequency": 500,
   "logLevel" : "INFO"
 }
