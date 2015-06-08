@@ -11,15 +11,17 @@ var Producer = require('./lib/Producer');
 var producer = new Producer();
 
 // wrap call to send in repeating function
-setInterval(producer.send(function(err, data) {
-    if (err) {
-      log.error(err);
-    } else {
-      log.Info(data);
-    }
-  }), frequency);
+setInterval(function() {
+    producer.send(function(err, data) {
+      if (err) {
+        log.error(err);
+      } else {
+        log.info(data);
+      }
+    });
+  }, frequency);
 
 process.on('uncaughtException', function(err) {
-  log.error();('Caught exception: ' + err);
+  log.error('UnCaught exception: ' + err.message);
   process.exit(1);
 });
