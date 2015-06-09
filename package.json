@@ -19,8 +19,7 @@
   "homepage": "https://github.com/c1freitas/challenge-producer",
   "dependencies": {
     "config": "^1.14.0",
-    "log": "^1.4.0",
-    "request": "^2.57.0"
+    "log": "^1.4.0"
   },
   "devDependencies": {
     "chai": "^3.0.0",
